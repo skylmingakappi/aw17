@@ -12,5 +12,12 @@ li {
     font-family: "Garamond";
 }
 .jumbotron {
+    padding: 25px;
+    border-bottom-style: solid;
+    background-color: #fff2e6;
+}
+h4 {
     padding: 10px;
+    font-family: "Garamond";
+    font-size: 30px
 }
