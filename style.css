@@ -6,11 +6,28 @@ p {
     color:#000;
     font-family: "Helvetica";
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+    
+    
+}
 li {
-    display: inline;
-    font-size: 15px;
-    font-family: "Garamond";
-    color: #000;
+
+    float:left;
+    font-family: "Helvetica";
+    
+}
+li a {
+    display: block;
+    padding: 5px 30px;
+    color:#FFF;
+    
+    
+    
 }
 .jumbotron {
     padding: 5px;
@@ -21,7 +38,4 @@ h4 {
     padding: 10px;
     font-family: "Garamond";
     font-size: 30px
-}
-ul {
-    color: whitesmoke;
 }
