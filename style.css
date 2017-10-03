@@ -1,6 +1,16 @@
 h1 {
-   color:red;
+   color:#000000;
+   font-family: "Garamond";
 }
 p {
-    color:aqua;
+    color:#000;
+    font-family: "Helvetica";
+}
+li {
+    display: inline;
+    font-size: 15px;
+    font-family: "Garamond";
+}
+.jumbotron {
+    padding: 10px;
 }
