@@ -10,6 +10,7 @@ li {
     display: inline;
     font-size: 15px;
     font-family: "Garamond";
+    color: #000;
 }
 .jumbotron {
     padding: 5px;
