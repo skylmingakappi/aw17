@@ -1,6 +1,55 @@
+h1 {
+   color:#000000;
+   font-family: "Garamond";
+}
+p {
+    color:#000;
+    font-family: "Helvetica";
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    opacity: 75%;
+    
+    
+}
+li {
+
+    float:left;
+    font-family: "Helvetica";
+    
+}
+li a {
+    display: block;
+    padding: 5px 30px;
+    color:#FFF; 
+    
+}
+li a:hover {
+    background-color: blanchedalmond;
+}
+.active {
+    background-color: deepskyblue;
+}
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none,}
+}
 .jumbotron {
     padding: 5px;
     background-color: #fff2e6;
     margin: 0px;
+}
+h4 {
+    padding: 10px;
     font-family: "Garamond";
+    font-size: 30px
+}
+body {
+    background-color: #fff2e6;
 }
