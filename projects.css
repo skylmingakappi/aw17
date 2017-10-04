@@ -1,11 +1,15 @@
-img.container {
-    @media and
+img{
+    width: 50%;
+    height; 200px;
+    display: block;
+    margin: auto;
+
+}
 }
 . container {
     
 }
-.jumbotron {
-    overflow: hidden;
+header {
 }
 .alexwatman {
     background-color: #000;

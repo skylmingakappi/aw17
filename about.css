@@ -3,6 +3,7 @@ body, html {
 }
 header {
     overflow: hidden;
+    
 }
 .parallax {
     background-image: url(awsmokebg.jpg);
@@ -32,7 +33,7 @@ header {
     background-size: cover;  
 }
 .intro{
-    background-color: #fff;
+  background: rgba(166,182,185,1);
    height:1000px;
 }
 .projects {
