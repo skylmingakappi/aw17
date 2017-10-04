@@ -20,7 +20,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-    font-family: "Futura" "Arial" "Serif";
+    font-family: "Arial";
     font-size: 2em;
 }
 .parallax2 {
@@ -67,7 +67,8 @@ img{
     font-size: 30px;
     color: #fff;
       z-index: +1;
-      font-family: "Futura" "sans";
+      font-family: "Garamond";
+    
 }
 a{
     color: #fff;

@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-origin: content-box;
 }
 /* img{
     width: 50%;
@@ -16,8 +17,7 @@ body {
         height: 100%;
     } 
 }
-.container {
-       height: 100%; 
+.container { 
     }
         
     }
