@@ -31,6 +31,9 @@
   background-color: #EAEDF0;
   height: 600px;
 }
+img {
+    width: 100%;
+}
 
 .sign-up {
   background-color: #D6E9FE;
