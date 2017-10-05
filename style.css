@@ -1,81 +1,89 @@
-.backing {
-    background-repeat: no-repeat;
-    background-size: cover;
-header {
-    overflow: hidden;
-}
-.parallax {
-    background-image: url(awsmokebg.jpg);
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
-.hero-text {
-  text-align: center;
-  position: fixed;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-    font-family: "Arial";
-    font-size: 2em;
-}
-.parallax2 {
-  background-image: url(20140630_111911.jpg);
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;  
-}
-.intro{
-    background-color: #fff;
-   height:1000px;
-}
-.projects {
-    background-color: #fff;
-    height: 64em;
-}
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-}
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-img{
-    width: 50%;
-    height; 200px;
-    display: block;
-    margin: auto;
-    z-index: -1;
-}
-    .container {
-        
-    }
-        
-    }
-  .center {
-    position: absolute;
-    left: 0;
-    top: 80%;
-    width: 100%;
+@import "compass/css3";
+
+#boxshadow {
+    box-shadow: 0px 2px rgba(97,63,59,0.2);
+    
+} 
+
+/* flex box */
+.wrapper {
+    display: flex;
+    flex-flow: wrap;
     text-align: center;
-    font-size: 30px;
+}
+.wrapper > * {
+    padding: 2em;
+    flex: 1 100%;
+}
+.header {
+    background-color: rgba(242,71,56,1);
+    color: #fff;   
+
+}
+.footer {
+    background: rgba(242,71,56,1);
+
+}
+.nav {
+    background-color: rgba(242,71,56,0.9);
+    padding: 10px;
     color: #fff;
-      z-index: +1;
-      font-family: "Garamond";
+}
+.main {
+    background: rgba(255,247,237,1);
+    text-align: center;
+}
+.aside-1 {
+    background-color: rgba(9,33,64,1);
     
 }
-a{
+.aside-2 {
+    background-color:rgba(255,247,237,1);
+}
+@media all and (min-width: 600px) {
+    .aside {flex: 1 auto;}
+}
+@media all and (min-width: 800px) {
+    .main {flex: 8 0px;}
+    .aside-1 {order: 1; }
+    .main {order: 2; }
+    .aside-2 {order: 3; }
+    .footer {order: 4; }
+} 
+/* end flex box */
+body {
+   /* padding: 0em 2em;*/
+    font-family: 'Open Sans', serif;
+}
+/* fixed footer */
+#footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    padding: 1em;
     color: #fff;
 }
-@media only screen and (max-width: 1000px){
-    body{
-        background-color: black;
-    }
+@media screen and ( min-width: 400px){
+.typewriter {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: 1em white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+   animation: 
+        typing 5s steps(25,end),
+        blink-caret .5s step-end infinite;
 }
-      
+}
+@keyframes typing {
+    from { width: 0}
+    to {width: 100%}
+}
+@keyframes blink-caret {
+    from, to {border-color: transparent}
+    50% {border-color: rgba(9,33,64,1)}
+}
+
