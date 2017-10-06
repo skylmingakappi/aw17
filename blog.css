@@ -6,6 +6,7 @@
 .page {
   display: flex;
   flex-wrap: wrap;
+    padding-top: 2em;
 }
 
 .section {
@@ -18,18 +19,20 @@
 
 .menu {
   background-color: #5995DA;
-  height: 40px;
+  height: 2em;
     width: 100%;
     position: fixed;
 }
 
 .header {
   background-color: #B2D6FF;
+ justify-content: center;
+  
 }
 
 .content {
   background-color: #EAEDF0;
-  height: 600px;
+  height: 10em;
 }
 img {
     width: 100%;
@@ -80,10 +83,9 @@ a:hover {
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-  body {
-    background-color: #F09A9D; /* Red */
+   
   }
-}
+
 
 
 /* Tablet Styles */
@@ -108,7 +110,7 @@ a:hover {
     width: 33.3%;
   }
   .header {
-    height: 400px;
+    height: 8em;
   }
     .button {
         margin-right: 40em;

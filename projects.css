@@ -1,48 +1,55 @@
-img{
-    width: 50%;
-    height; 200px;
-    display: block;
-    margin: auto;
-
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+.page {
+    display: flex;
+    flex-wrap: wrap;
 }
-. container {
-    
-}
-header {
-}
-.alexwatman {
-    background-color: #000;
-    color:#fff;
-}
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #000;
-    position: fixed;
+/*=== the flex box ===*/ 
+.section{
     width: 100%;
-    opacity: 75%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-li {
-
-    float:left;
-    font-family: "Helvetica";
-    
+.section-body {
+    width: 50%;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
-li a {
-    display: block;
-    padding: 5px 30px;
-    color:#FFF; 
-    
+/*=== header flex item ===*/
+.menu {
+    height: 7em;
+    background-color:cornflowerblue;
+    color: white;   
 }
-li a:hover {
+/*=== Main content ===*/
+.main {
+    background-color: cornsilk;
+}
+.project {
     background-color: blanchedalmond;
 }
-.scroll {
-    overflow: scroll;
+/*=== footer===*/
+.footer {
+    height: 4em;
+    background-color: cornflowerblue;
 }
-.body {
-    overflow: visible;
+/*===tablet===*/
+@media only screen and (min-width: 401px) {
+    .section-body {
+        width: 25%;
+    }
+}
+/*=== desktop===*/
+@media only screen and (min-width: 675px) {
+    .section-body {
+        width: 25%;
+        height: 30em;
+    }
 }

@@ -5,78 +5,71 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*====== To format correctly in browsers===*/
-/*===== menu bar ====*/
-.menu-container {
-    color: #fff;
-    background-color: rgba(242,71,56,1);
-    padding: 20px 10px;
+/*====== Page layout ===*/
+.page-t {
+    height: 2000px;
+}
+.page {
     display: flex;
-    justify-content: center;
-}
-.menu {
-    border: 2px solid #fff;
-    padding: 1em;
-    width; 900px;
-    display: flex;
-    justify-content: space-around;
-}
-.aw{
-    font-family: monospace;
-}
-.Alexanderwatman {
-    font-family: cursive;
-    display: none;
-}
-@media only screen and (min-width: 600px) {
-    .Alexanderwatman {display: flex;}
-    .aw {display: none;}
-}
-/* ====== menu bar ==== */
-/* ===== header ===== */
-.header-container {
-    color:#fff; 
-    background-color:#bf5754; 
-    display: flex;
-    justify-content: center;
-}
-.header{
-    width:900px;
-    height: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:#bf5754; 
-}
-#boxshadow {
-    box-shadow: 0px 2px rgba(97,63,59,0.2);
+    flex-wrap: wrap;
+    padding: 1.7em 0em 2.5em 0em;
     
-} 
-
-/* flex box */
-.wrapper {
+}
+.section {
+    width: 100%;
     display: flex;
-    flex-flow: wrap;
-    text-align: center;
+    justify-content: center;
+    align-content: center;
 }
-.wrapper > * {
-    padding: 2em;
-    flex: 1 100%;
-}
-.header {
-    background-color: rgba(242,71,56,1);
-    color: #fff;   
+/*===== menu bar ====*/
 
+.menu {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    height: 2.5em;
+    padding: 0px;
+    position: fixed;
+    color: #fff;
 }
+/*=== Footer ===*/
 .footer {
     background: rgba(242,71,56,1);
-
-}
-.nav {
-    background-color: rgba(242,71,56,0.9);
-    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    height: 1.7em;
     color: #fff;
+    
 }
+/* ========= Paralax ========*/
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.parallax-layer-base {
+transform: translateZ(0);
+}
+.parallax-layer-back {
+    transform: translateZ(-1px)
+}
+/*=== tablet ===*/
+@media only screen and (min-width: 650px) {
+    .page {
+        padding: 0em 1em;
+    }
+}
+
 .main {
     background: rgba(255,247,237,1);
     text-align: center;
@@ -97,41 +90,16 @@
     .main {order: 2; }
     .aside-2 {order: 3; }
     .footer {order: 4; }
+    .page {
+        padding: 0em 4em;
+    }
 } 
-/* end flex box */
+/* end flex box 
 body {
-   /* padding: 0em 2em;*/
+   padding: 0em 2em;
     font-family: 'Open Sans', serif;
-}
+} */
 /* fixed footer */
 #footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
-    left: 0px;
-    padding: 1em;
-    color: #fff;
+    
 }
-@media screen and ( min-width: 400px){
-.typewriter {
-    color: #fff;
-    font-family: monospace;
-    overflow: hidden;
-    border-right: 1em white;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-   animation: 
-        typing 5s steps(25,end),
-        blink-caret .5s step-end infinite;
-}
-}
-@keyframes typing {
-    from { width: 0}
-    to {width: 100%}
-}
-@keyframes blink-caret {
-    from, to {border-color: transparent}
-    50% {border-color: rgba(9,33,64,1)}
-}
-
