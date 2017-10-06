@@ -21,85 +21,33 @@
     justify-content: center;
     align-content: center;
 }
+.body {
+    background-image: url(images/pexelswood.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+    .font {
+        font-family: 'Bangers';
+    }
+    
+
+.center {
+        
+        color: white;
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+        
+}
+       
 /*===== menu bar ====*/
-
-.menu {
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    height: 2.5em;
-    padding: 0px;
-    position: fixed;
-    color: #fff;
-}
-/*=== Footer ===*/
-.footer {
-    background: rgba(242,71,56,1);
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
-    left: 0px;
-    height: 1.7em;
-    color: #fff;
-    
-}
-/* ========= Paralax ========*/
-.parallax {
-    perspective: 1px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-.parallax-layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.parallax-layer-base {
-transform: translateZ(0);
-}
-.parallax-layer-back {
-    transform: translateZ(-1px)
-}
-/*=== tablet ===*/
-@media only screen and (min-width: 650px) {
-    .page {
-        padding: 0em 1em;
-    }
-}
-
-.main {
-    background: rgba(255,247,237,1);
-    text-align: center;
-}
-.aside-1 {
-    background-color: rgba(9,33,64,1);
-    
-}
-.aside-2 {
-    background-color:rgba(255,247,237,1);
-}
-@media all and (min-width: 600px) {
-    .aside {flex: 1 auto;}
-}
-@media all and (min-width: 800px) {
-    .main {flex: 8 0px;}
-    .aside-1 {order: 1; }
-    .main {order: 2; }
-    .aside-2 {order: 3; }
-    .footer {order: 4; }
-    .page {
-        padding: 0em 4em;
-    }
-} 
-/* end flex box 
-body {
-   padding: 0em 2em;
-    font-family: 'Open Sans', serif;
-} */
-/* fixed footer */
-#footer {
-    
+@media only screen and (max-width:400px)
+    .body {
+        background-size: ;
 }
