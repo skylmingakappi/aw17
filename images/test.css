@@ -1,0 +1,16 @@
+html, body{
+  height: 100%;
+}
+.parallax {
+    background-image: url(pexelswood.jpeg);
+  height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.message {
+    height: 1000px;
+    background-color: white;
+    font-size: 4em;
+}
