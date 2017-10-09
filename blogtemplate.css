@@ -45,3 +45,9 @@ body {
     font-family:monospace;
     position:static;
 }
+@media only screen and (min-width: 675px) {
+    .content{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
