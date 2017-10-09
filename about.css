@@ -1,60 +1,59 @@
-.wrapper {
-  /* The height needs to be set to a fixed value for the effect to work.
-   * 100vh is the full height of the viewport. */
-  height: 100vh;
-  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
-  overflow-x: hidden;
-  /* Enable scrolling on the page. */
-  overflow-y: auto;
-  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-
-.section {
-  /* Needed for children to be absolutely positioned relative to the parent. */
-  position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
-
-  /* For text formatting. */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color:azure;
-  text-shadow: 0 0 5px #000;
+body {
+    font-size: 12px;
+    background-color: white;
 }
-@media only screen and (min-width:700px){
-.parallax::after {
-  /* Display and position the pseudo-element */
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  /* Move the pseudo-element back away from the camera,
-   * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(1.5);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
-  z-index: -1;
-    
+.body-container {
+    display: flex;
 }
+.top-image {
+    background-size: cover;
+    background-color: #18121e;
+    height: 100vh;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
-
-/* The styling for the static div. */
-.static {
-  background:#fff;
+.about-header{
+    background-color: #233237;
+    align-items: center;
+    height: 20vh;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    padding: 1em;
 }
-
-/* Sets the actual background images to adorable kitties. This part is crucial. */
-.bg1::after {
-  background-image: url('images/pexelswood.jpeg');
-    
+.about-section {
+ background-color: whitesmoke;
+display: inline-flex;
+height: 100vh;
+width: 100%;
+    justify-content: center;
 }
-
-.bg2::after {
-  background-image: url('images/pexels-photo-325678.jpeg');
+.projects-header{
+     background-color: #984b43;
+    align-items: center;
+    height: 20vh;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    padding: 1em;
+}
+.projects {
+  background-color: #d9d9d9;
+height: 100vh;  
+width: 100%;
+}
+@media only screen and (min-width: 450px) {
+    body {
+        font-size: 20px;
+    }
+    .about-header {
+        padding: 9em;
+    }
 }
