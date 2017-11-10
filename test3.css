@@ -3,47 +3,62 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .page {
-  display: flex;
-  flex-wrap: wrap;
-    padding-top: 2em;
+align-content:center;
+    flex-wrap: wrap;
 }
 
-.section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header {
+    position:relative;
+    flex-wrap: wrap;
+}
+.barheader{
+    height: 25px;
+    color: white;
+    background-color: black;
+    padding: 2px 40px
+}
+.linkheader {
+    height: 40px;
+    background-color: white; 
+    padding: 5px 40px;
+}
+.headlist {
+    display: inline-flex;
+    padding-left: 50vh;
 }
 
-.menu {
-  background-color: #5995DA;
-  height: 2em;
-    width: 100%;
-    position: fixed;
 }
-.body {
-    background-color: pink;
-    height: 70em;
+.main {
+    padding-top: 20px;
+    text-align: center;
+    height: 80vh;
+    background-color: black;
+    color: white;
+    
 }
-.img-header{ 
-    max-width: 400px;
-    display: flex;
+.main-1 {
+    height: 70vh;
+    background-color: gainsboro;
 }
-@media only screen and (min-width: 400px){
-    .body {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
+.main-2 {
+    height: 80vh;
+    background-color: white;
 }
-@media only screen and (min-width: 650px){
-     .page {
-         padding-left: 2em;
-        padding-right: 2em;
-    }
-    .image-header{
-        max-width: 33%;
-        flex: initial;
-    }
-    .body,
+.main-3 {
+    height: 70vh;
+    background-color: gainsboro;
+}
+.main-4 {
+    height: 80vh;
+    background-color: white;
+}
+
+.footer {
+    height: 40vh;
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+    padding: 5px;
 }
