@@ -1,77 +1,26 @@
-@import "compass/css3";
-/*====== To format correctly in browsers===*/
+
+/* page set up
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/*====== Page layout ===*/
-.page-t {
-    height: 2000px;
-}
+*/
 .page {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1.7em 0em 2.5em 0em;
-    
-}
-.section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.body {
-    background-image: url(images/pexelswood.jpeg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    margin: 0px;
+    padding:0px;
+    height: 100vh;
+    box-sizing:inherit; 
+    background-color: #0b2c5c;
     background-size: cover;
-    background-color: #000; 
-    opacity: 0.7;
 }
-    .font {
-        font-family: 'Open Sans';
-        letter-spacing: 0.05em;
-        font-size: 2em;
-        font-weight: 500;
-        text-shadow: 3px 3px #000;
-    }
-    
-a {
-    color: white;
-    text-decoration: none;
+.logo {
     
 }
-
-.center {
-        
-        color: white;
-        border-radius: 1em;
-        padding: 1em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%) 
-        
-}
-       
-/*===== menu bar ====*/
-@media only screen and (max-width:400px){
-    .font {
-        font-size;
-}
+.logo-on-hover {
+    display: block;
 }
 
-@media only screen and (min-width:401px) {
-    .font {
-        font-size: 3em;
-    }
-} 
-@media only screen and (min-width:700px) {
-    .font {
-        font-size: 4em;
-    }   
-
-} 
+#logo-hover:hover {
+    display: none;
+}
