@@ -14,13 +14,24 @@
     background-color: #0b2c5c;
     background-size: cover;
 }
-.logo {
-    
-}
-.logo-on-hover {
-    display: block;
-}
 
-#logo-hover:hover {
-    display: none;
+.header {
+    display: flex;
+    align-content: center;
+    color:white;
+
+}
+.heading{
+    font-size: 35px;
+    padding-top: 45px;
+}
+.card {
+    width: 250px;
+    height:200px;
+    background-image: url(images/AWlinewhite.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.card:hover {
+background-image: url(images/AWcolour.svg);
 }
