@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -64,3 +65,69 @@ align-content:center;
     padding: 5px;
 }
 
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+align-content:center;
+    flex-wrap: wrap;
+}
+
+.header {
+    position:relative;
+    flex-wrap: wrap;
+}
+.barheader{
+    height: 25px;
+    color: white;
+    background-color: black;
+    padding: 2px 40px
+}
+.linkheader {
+    height: 40px;
+    background-color: white; 
+    padding: 5px 40px;
+}
+.headlist {
+    display: inline-flex;
+    padding-left: 50vh;
+}
+
+}
+.main {
+    padding-top: 20px;
+    text-align: center;
+    height: 80vh;
+    background-color: black;
+    color: white;
+    
+}
+.main-1 {
+    height: 70vh;
+    background-color: gainsboro;
+}
+.main-2 {
+    height: 80vh;
+    background-color: white;
+}
+.main-3 {
+    height: 70vh;
+    background-color: gainsboro;
+}
+.main-4 {
+    height: 80vh;
+    background-color: white;
+}
+
+.footer {
+    height: 40vh;
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+    padding: 5px;
+}
+>>>>>>> 638717b7790a4560e0a6fb2932f6f9f55824c670
