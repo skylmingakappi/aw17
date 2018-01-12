@@ -6,116 +6,40 @@
 .page {
   display: flex;
   flex-wrap: wrap;
-    padding-top: 2em;
 }
-
-.section {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu {
-  background-color: #5995DA;
-  height: 2em;
+.section{
     width: 100%;
-    position: fixed;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+     background-image: url(images/AWlinewhite.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    flex: auto;
+    background-color: #0b2c5c;
+}
+.menu:hover {
+background-image: url(images/AWcolour.svg);
+}
+.sect-1{
+    background-color: whitesmoke;
+}
+.sect-1-cont{
+    background-color: blue;
+}
+.sect-2{
+    background-color: #0b2c5c;
 }
 
-.header {
-  background-color: #B2D6FF;
- justify-content: center;
-  
-}
-
-.content {
-  background-color: #EAEDF0;
-  height: 10em;
-}
-img {
-    width: 100%;
-}
-
-.sign-up {
-  background-color: #D6E9FE;
-}
-
-.feature-1 {
-  background-color: #F5CF8E;
-}
-
-.feature-2 {
-  background-color: #F09A9D;
-}
-
-.feature-3 {
-  background-color: #C8C6FA;
-}
-.footer {
-    background-color: #5995DA;
-    height: 2em;
-    font-family: cursive;
-    color: #fff;
-}
-
-/* === Alex Watman button menu === */
-a:hover {
-    color: #eaedf0;
-    font-size: 1.1em;
-    border: 1px solid white;
-    border-radius: 5px;
-}
-.button {
-    color: #fff;
-    font-family: sans-serif;
-    text-decoration: none;
-    padding: 0.3em;
-   
-}
-.navlink {
-    color: #fff;
-    font-family: sans-serif;
-    padding: 0.5em;
-    display: none;
-}
-
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-   
-  }
-
-
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  .sign-up,
-  .feature-1,
-  .feature-2,
-  .feature-3 {
-    width: 50%;
-  }
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-  .page {
-    width: 960px;
-    margin: 0 auto;
-  }
-  .feature-1,
-  .feature-2,
-  .feature-3 {
-    width: 33.3%;
-  }
-  .header {
-    height: 4em;
-  }
-    .button {
-        margin-right: 40em;
-    }   
-    .navlink {
-        display: flex;
+@media only screen and (min-width: 900px){
+    .section {
+    height: 30vh;
+    }
+    .menu{
+        height: 20vh;
     }
 }
+    
