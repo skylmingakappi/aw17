@@ -7,12 +7,26 @@
   display: flex;
   flex-wrap: wrap;
 }
-.section{
+.frame {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+}
+.section {
+    height: 33vh;
+    width: 100%;
+}
+.one {
+    background-color: #0b2c5c;
+}
+.two {
+    background-color: #0b2c5c;
+    
+}
+.three {
+    background-color: #0b2c5c;
+}
+.four {
+    background-color: #0b2c5c;
 }
 
 .menu{
